@@ -13,7 +13,7 @@
 </script>
 
 <style lang="scss" scoped>
-@use '../styles/partials/variables' as *;
+@use '../assets/styles/partials/variables' as *;
     main {
         background-color: $mainbg;
         color: white;
