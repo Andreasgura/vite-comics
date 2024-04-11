@@ -23,6 +23,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@use '../../assets/styles/partials/variables' as *;
 ul {
     padding-left: 0;
 }
@@ -30,4 +31,7 @@ h3 {
     color: white;
     margin-top: 2rem;
     }
+a {
+    color: $links;
+}
 </style>
