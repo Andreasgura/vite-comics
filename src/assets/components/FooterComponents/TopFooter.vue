@@ -1,15 +1,10 @@
 <template>
     <div id="top-footer">
         <div class="container">
-            <ul class="d-flex flex-row ">
+            <ul class="d-flex flex-row py-3">
                 <li class="d-flex flex-row"
                 v-for="(page, index) in pages" :key="index">
-                    <div>
-                        <img :src="page.imgpath" :alt="page.name">
-                    </div>
-                    <div class="text-uppercase">
-                        {{ page.name }}
-                    </div>
+                    <TfCard :img="page.imgpath" :description="page.name"/>    
                 </li>
             </ul>
         </div>
@@ -17,8 +12,12 @@
 </template>
 
 <script>
+import TfCard from './TfCard.vue'
     export default {
         name : 'TopFooter',
+        components: {
+            TfCard
+        },
         data () {
             return {
                 pages : [
