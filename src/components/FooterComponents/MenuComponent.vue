@@ -1,8 +1,10 @@
 <template>
-    <div class="d-flex flex-column align-items-start ">
-        <div class="text-uppercase mb-3">
-            <h3>{{ title }}</h3>
+    <div>
+
+        <div>
+            <h3 class="text-uppercase mb-3">{{ title }}</h3>
         </div>
+
         <ul>
             <li v-for="(item, index) in items" :key="index">
                 <a class="text-capitalize" :href="item.path">{{ item.name }}</a>
@@ -24,13 +26,16 @@ export default {
 
 <style lang="scss" scoped>
 @use '../../assets/styles/partials/variables' as *;
+
 ul {
     padding-left: 0;
 }
+
 h3 {
     color: white;
     margin-top: 2rem;
-    }
+}
+
 a {
     color: $links;
 }

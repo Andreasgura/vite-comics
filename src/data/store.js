@@ -251,5 +251,27 @@ const sitesMenu = {
     ]
 }
 
+const icons = [
+    {
+        path: '/img/footer-facebook.png',
+        name: 'facebook'
+    },
+    {
+        path: '/img/footer-twitter.png',
+        name: 'twitter'
+    },
+    {
+        path: '/img/footer-youtube.png',
+        name: 'youtube'
+    },
+    {
+        path: '/img/footer-pinterest.png',
+        name: 'pinterest'
+    },
+    {
+        path: '/img/footer-periscope.png',
+        name: 'periscope'
+    }
+]
 
-export { pages, menuList, dccomicsMenu, dcMenu, shopMenu, sitesMenu, comics};;
+export { pages, menuList, dccomicsMenu, dcMenu, shopMenu, sitesMenu, comics, icons};;

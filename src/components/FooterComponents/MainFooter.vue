@@ -1,16 +1,16 @@
 <template>
     <div id="mainfooter">
-        <div class="container d-flex justify-content-between">
-            <div class="d-flex gap-5">
-                <div>
-                    <MenuComponent :title="dccomicsMenu.title" :items="dccomicsMenu.menu" />
-                    <MenuComponent :title="shopMenu.title" :items="shopMenu.menu" />
+        <div class="container">
+            <div class="d-flex flex-nowrap justify-content-between">
+                <div class="d-flex gap-5 ">
+                    <div>
+                        <MenuComponent :title="dccomicsMenu.title" :items="dccomicsMenu.menu" />
+                        <MenuComponent :title="shopMenu.title" :items="shopMenu.menu" />
+                    </div>
+                    <MenuComponent :title="dcMenu.title" :items="dcMenu.menu" />
+                    <MenuComponent :title="sitesMenu.title" :items="sitesMenu.menu" />
                 </div>
-                <MenuComponent :title="dcMenu.title" :items="dcMenu.menu" />
-                <MenuComponent :title="sitesMenu.title" :items="sitesMenu.menu" />
-            </div>
-            <div>
-                <img src="/img/dc-logo-bg.png" alt="logo">
+                <div class="dc-logo w-100 "></div>
             </div>
         </div>
     </div>
@@ -39,5 +39,11 @@ export default {
 #mainfooter {
     background-image: url('/img/footer-bg.jpg');
     background-size: cover;
+}
+
+div.dc-logo {
+    background-image: url('/img/dc-logo-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
 }
 </style>
