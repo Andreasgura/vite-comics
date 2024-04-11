@@ -40,4 +40,7 @@ li {
         padding: 5px;
     }
 }
+ul{
+    margin-bottom: 0;
+}
 </style>
