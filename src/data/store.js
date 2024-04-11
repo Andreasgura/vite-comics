@@ -52,4 +52,31 @@ const menuList = [
     },
 ]
 
-export { pages, menuList }; ;
+const dcMenu = {
+
+    title: 'dc',
+    menu: [
+        {
+            name: 'characters',
+            path: '#'
+        },
+        {
+            name: 'comics',
+            path: '#'
+        },
+        {
+            name: 'movies',
+            path: '#'
+        },
+        {
+            name: 'tv',
+            path: '#'
+        },
+        {
+            name: 'games',
+            path: '#'
+        }
+    ]
+}
+
+export { pages, menuList, dcMenu };;

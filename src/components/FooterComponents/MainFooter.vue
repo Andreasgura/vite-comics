@@ -1,12 +1,22 @@
 <template>
     <div>
-        MainFooter
+        <MenuComponent :title="dcMenu.title" :items="dcMenu.menu"/>
     </div>
 </template>
 
 <script>
+    import {dcMenu} from '../../data/store.js';
+    import MenuComponent from '../FooterComponents/MenuComponent.vue';
     export default {
-        name : 'MainFooter'
+        name : 'MainFooter',
+        components: {
+            MenuComponent,
+        },
+        data() {
+            return {
+                dcMenu,
+            }
+        }
     }
 </script>
 
